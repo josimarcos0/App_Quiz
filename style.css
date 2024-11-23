@@ -1,0 +1,109 @@
+*{
+    margin: 0;
+    padding: 0;
+    font-family: sans-serif;
+    box-sizing: border-box;
+}
+
+body {
+    display: flex;
+    justify-content: center; 
+    align-items: center; 
+    width: 100%;
+    min-height: 100vh; 
+    background: linear-gradient(  rgb(0, 129, 114), rgb(28, 0, 129));
+    color: #fff;
+    margin: 0;
+    padding: 20px; 
+    box-sizing: border-box;}
+
+.app{
+    background:#fff;
+    width: 90%;
+    max-width: 600px;
+    margin: 100px auto 0;
+    border-radius: 20px;
+    padding: 30px;
+}
+
+.app h1{
+    font-size: 25px;
+    color: #000000;
+    font-weight: 600;
+    border-bottom: 1px solid #333;
+}
+
+.quiz{
+    padding: 20px 0;
+}
+
+.quiz h2{
+    font-size: 18px;
+    color: #000000;
+    font-weight: 600;
+}
+
+.btn{
+    background: #fff;
+    color: #000000;
+    font-weight: 500;
+    width: 100%;
+    border: 1px solid #222;
+    padding: 10px;
+    margin: 10px 0;
+    border-radius: 20px;
+    text-align: left;
+    cursor: pointer;
+    transition: all 0.4s;
+}
+
+.btn:hover{
+    background: rgb(0, 129, 114);
+    color: #fff;
+}
+
+#next-btn{
+    background: rgb(0, 129, 114);
+    color: #fff;
+    font-weight: 500;
+    width: 100px;
+    border: 0;
+    padding: 10px;
+    margin: 20px auto 0;
+    border-radius: 20px;
+    cursor: pointer;
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
