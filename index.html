@@ -1,25 +1,44 @@
 <!DOCTYPE html>
 <html lang="pt-br">
+
 <head>
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <link rel="stylesheet" href="style.css">
-    <title>Quiz</title>
+    <title>Simples Quiz</title>
 </head>
+
 <body>
     <div class="app">
-        <h1>Simples Quiz</h1>
-        <div class="quiz">
-            <h2 id="question">Question goes here</h2>
-            <div class="answer-buttons">
-                <button class="btn">Answer 1</button>
-                <button class="btn">Answer 2</button>
-                <button class="btn">Answer 3</button>
-                <button class="btn">Answer 4</button>
+        <!-- Tela de Inicialização -->
+        <div id="start-screen" class="start-screen">
+            <h1>Bem-vindo ao Quiz!</h1>
+            <p>Teste seus conhecimentos em várias áreas do saber.</p>
+            <button id="start-btn" class="btn">Começar</button>
+        </div>
+
+        <!-- Tela do Quiz -->
+        <div id="quiz-screen" class="quiz-screen" style="display: none;">
+            <h1>Simples Quiz</h1>
+            <div class="quiz">
+                <!-- Pergunta -->
+                <h2 id="question">A pergunta será exibida aqui</h2>
+                
+                <!-- Contêiner de respostas -->
+                <div id="answer-buttons" class="btn-container"></div>
+                
+                <!-- Botão de próxima pergunta -->
+                <button id="next-btn" class="btn" style="display:none;">Próxima</button>
             </div>
-            <button id="next-btn">Next</button>
+            <div id="result-container" class="result-container">
+                <p id="score-display"></p>
+                <button id="restart-btn" class="btn" style="display:none;">Recomeçar</button>
+            </div>
         </div>
     </div>
+
+    <script src="script.js"></script>
 </body>
+
 </html>

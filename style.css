@@ -1,109 +1,84 @@
-*{
-    margin: 0;
-    padding: 0;
-    font-family: sans-serif;
-    box-sizing: border-box;
-}
-
 body {
+    font-family: Arial, sans-serif;
     display: flex;
-    justify-content: center; 
-    align-items: center; 
-    width: 100%;
-    min-height: 100vh; 
-    background: linear-gradient(  rgb(0, 129, 114), rgb(28, 0, 129));
-    color: #fff;
+    justify-content: center;
+    align-items: center;
+    min-height: 100vh;
+    background-color: #f7f7f7;
     margin: 0;
-    padding: 20px; 
-    box-sizing: border-box;}
-
-.app{
-    background:#fff;
-    width: 90%;
-    max-width: 600px;
-    margin: 100px auto 0;
-    border-radius: 20px;
-    padding: 30px;
 }
 
-.app h1{
-    font-size: 25px;
-    color: #000000;
-    font-weight: 600;
-    border-bottom: 1px solid #333;
+.app {
+    text-align: center;
 }
 
-.quiz{
-    padding: 20px 0;
+h1 {
+    font-size: 2.5em;
+    margin-bottom: 20px;
+    color: #4CAF50;
 }
 
-.quiz h2{
-    font-size: 18px;
-    color: #000000;
-    font-weight: 600;
+h2 {
+    font-size: 1.5em;
+    margin-bottom: 20px;
 }
 
-.btn{
-    background: #fff;
-    color: #000000;
-    font-weight: 500;
-    width: 100%;
-    border: 1px solid #222;
-    padding: 10px;
-    margin: 10px 0;
-    border-radius: 20px;
-    text-align: left;
+.btn {
+    padding: 10px 20px;
+    margin: 10px;
+    font-size: 1.2em;
     cursor: pointer;
-    transition: all 0.4s;
+    background-color: #4CAF50;
+    color: white;
+    border: none;
+    border-radius: 5px;
+    transition: background-color 0.3s;
 }
 
-.btn:hover{
-    background: rgb(0, 129, 114);
-    color: #fff;
+.btn:hover {
+    background-color: #45a049;
 }
 
-#next-btn{
-    background: rgb(0, 129, 114);
-    color: #fff;
-    font-weight: 500;
-    width: 100px;
-    border: 0;
-    padding: 10px;
-    margin: 20px auto 0;
-    border-radius: 20px;
-    cursor: pointer;
+.btn-container {
+    margin-top: 20px;
 }
 
+.correct {
+    background-color: #4CAF50;
+}
 
+.incorrect {
+    background-color: #f44336;
+}
 
+.result-container {
+    margin-top: 20px;
+    display: none;
+    font-size: 1.2em;
+}
 
+.start-screen,
+.quiz-screen {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
 
+#next-btn {
+    display: none;
+    background-color: #FF9800; /* Cor laranja para o botão Próxima */
+}
 
+#next-btn:hover {
+    background-color: #FB8C00; /* Tom mais escuro de laranja ao passar o mouse */
+}
 
+#restart-btn {
+    display: none;
+    background-color: #2196F3; /* Cor azul para o botão Recomeçar */
+}
 
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
+#restart-btn:hover {
+    background-color: #1976D2; /* Tom mais escuro de azul ao passar o mouse */
+}
